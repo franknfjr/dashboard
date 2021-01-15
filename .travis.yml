@@ -1,0 +1,17 @@
+language: elixir
+elixir:
+  - 1.11
+opt_release:
+  - 22.2.6
+
+addons:
+  postgres: '12.0'
+
+services:
+  - postgresql
+
+script:
+  - mix format --check-formatted --dry-run
+  - mix credo --strict
+  - mix sobelow --config
+  - mix coveralls.json
