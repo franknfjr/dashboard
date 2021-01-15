@@ -1,4 +1,7 @@
 defmodule DashboardWeb.PageLive do
+  @moduledoc """
+  module live
+  """
   use DashboardWeb, :live_view
 
   @impl true
