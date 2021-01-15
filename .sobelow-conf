@@ -1,6 +1,6 @@
 [
   verbose: false,
-  private: false,
+  private: true,
   skip: false,
   router: "",
   exit: "false",
