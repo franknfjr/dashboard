@@ -1,4 +1,7 @@
 defmodule DashboardWeb.PageLive do
+  @moduledoc """
+  module live
+  """
   use DashboardWeb, :live_view
 
   @impl true
@@ -27,7 +30,7 @@ defmodule DashboardWeb.PageLive do
 
   defp search(query) do
     if not DashboardWeb.Endpoint.config(:code_reloader) do
-      raise "action disabled when not in development"
+      raise "action disabled when not in development teste"
     end
 
     for {app, desc, vsn} <- Application.started_applications(),

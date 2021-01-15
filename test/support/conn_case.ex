@@ -16,6 +16,7 @@ defmodule DashboardWeb.ConnCase do
   """
 
   use ExUnit.CaseTemplate
+  alias Ecto.Adapters.SQL.Sandbox
 
   using do
     quote do
@@ -32,10 +33,10 @@ defmodule DashboardWeb.ConnCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Dashboard.Repo)
+    :ok = Sandbox.checkout(Dashboard.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Dashboard.Repo, {:shared, self()})
+      Sandbox.mode(Dashboard.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}
