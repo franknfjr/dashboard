@@ -1,11 +1,11 @@
 language: elixir
 elixir:
-  - 1.11
+  - 1.10
 opt_release:
   - 22.2.6
 
 addons:
-  postgres: '12.5'
+  postgres: '9.4'
 
 services:
   - postgresql
