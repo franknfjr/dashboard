@@ -1,5 +1,7 @@
 # Dashboard
 
+[![Build Status](https://travis-ci.org/franknfjr/dashboard.svg?branch=main)](https://travis-ci.org/franknfjr/dashboard)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
