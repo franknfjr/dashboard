@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <%= csrf_meta_tag() %>
-    <%= live_title_tag assigns[:page_title] || "Dashboard", suffix: " · Painel Cirúrgico" %>
-    <link phx-track-static rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
-    <script defer phx-track-static type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
-  </head>
-  <body class="from-blue-600 to-purple-500 bg-gradient-to-r w-full h-64 block">
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= csrf_meta_tag() %>
+  <%= live_title_tag assigns[:page_title] || "Dashboard", suffix: " · Painel Cirúrgico" %>
+  <link phx-track-static rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>" />
+  <script defer phx-track-static type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+</head>
+
+<body class="from-blue-600 to-purple-500 bg-gradient-to-r w-full h-screen block">
+  <div class="p-6 h-full">
+    <div class="bg-white rounded-lg p-6 w-1/2 mb-3"> <!-- início -->
+      <div class="z-10 absolute flex"> <!-- info especialistas -->
+        <img class="object-cover object-right h-24 w-24 rounded-full mt-0 ml-0 mr-5"
+          src="https://storage.alboom.ninja/sites/2851/albuns/282206/fotos_de_perfil_profissional_dr._Rodrigo-1.jpg?t=1530304510">
+        <div>
+          <h2 class="text-xl font-bold">Cirurgião</h2>
+          <div class="text-purple-500 text-lg">Dr. Victor Sá</div>
+        </div>
+
+      </div>
+      <div class="z-12 relative flex h-32">
+        <img class="object-cover object-right h-24 w-24 rounded-full mt-12 ml-10 mr-6"
+          src="https://storage.alboom.ninja/sites/2851/albuns/282206/fotos_de_perfil_profissional_dr._Rodrigo-1.jpg?t=1530304510">
+        <div class="my-20">
+          <h2 class="text-xl font-bold">Anestesista</h2>
+          <div class="text-purple-500 text-lg">Dr. João Souza</div>
+        </div>
+      </div> <!-- fim info especialistas -->
+      <div class="flex justify-between w-full mt-6">
+        <div>
+          <h2 class="text-xl font-bold">Nome da cirurgia</h2>
+          <div class="text-purple-500 text-lg">Cistectomia – Retirada da bexiga</div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold">Horário</h2>
+          <div class="text-purple-500 text-lg">07:00 - 09:00</div>
+        </div>
+      </div>
+      <div class="w-full mt-6">
+        <h1 class="text-xl text-center text-purple-500 font-bold">SALA 01</h1>
+      </div>
+    </div> <!-- fim -->
+  </div>
+</body>
+
 </html>
+
+<%# <div class="md:flex bg-white rounded-lg p-6">
+  <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="avatar.jpg">
+  <div class="text-center md:text-left">
+    <h2 class="text-lg">Erin Lindford</h2>
+    <div class="text-purple-500">Product Engineer</div>
+    <div class="text-gray-600">erinlindford@example.com</div>
+    <div class="text-gray-600">(555) 765-4321</div>
+  </div>
+</div> %>
