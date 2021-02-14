@@ -1,5 +1,7 @@
 # Dashboard
 
+[![Build Status](https://www.travis-ci.com/gissandrogama/events.svg?branch=main)](https://www.travis-ci.com/gissandrogama/events)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
