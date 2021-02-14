@@ -1,6 +1,6 @@
 # Dashboard
 
-[![Build Status](https://travis-ci.org/franknfjr/dashboard.svg?branch=main)](https://travis-ci.org/franknfjr/dashboard)
+[![Build Status](https://www.travis-ci.com/gissandrogama/events.svg?branch=main)](https://www.travis-ci.com/gissandrogama/events)
 
 To start your Phoenix server:
 
