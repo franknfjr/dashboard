@@ -17,7 +17,7 @@ defmodule DashboardWeb.Router do
   scope "/", DashboardWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    live "/", SurgeryLive, :index
   end
 
   # Other scopes may use custom stacks.
