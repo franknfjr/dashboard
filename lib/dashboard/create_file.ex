@@ -1,6 +1,7 @@
 defmodule Dashboard.CreateFile do
   use GenServer
 
+  @moduledoc false
   def start_link(_) do
     GenServer.start_link(__MODULE__, %{}, name: SurgeryFile)
   end
